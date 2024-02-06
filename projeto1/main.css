@@ -1,133 +1,102 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
 
-body {
-    font-family: 'Roboto', sans-serif;
-    text-align: center; /* Centraliza todos os elementos */
-    background-color: black;
-}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto 1</title>
+    <link rel="stylesheet" href="./main2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Hollow Knight</h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#about">Sobre o jogo</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Ferramentas</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="about">
+        <div class="container">
+            <img class="store-front" src="./midia/263f81e23b7f6ead6fd55f46620e14fe.png" alt="Fachada da loja Games Shop" />
+            <div  class="paragrafo">
+                <h2>Sobre o jogo</h2>
+                <p>
+                    Hollow Knight é um jogo de aventura e ação que se desenrola em um mundo misterioso e sombrio, repleto de criaturas estranhas e desafiadoras. Neste jogo, você assume o papel de um pequeno inseto cavaleiro, conhecido como "O Cavaleiro", que embarca em uma jornada épica pelo antigo reino de Hallownest. O jogo combina elementos de plataforma, exploração e combate fluido, permitindo que os jogadores mergulhem em cenários intricados, cheios de segredos a serem descobertos e inimigos formidáveis a serem derrotados. Com sua arte deslumbrante em estilo de desenho animado e uma trilha sonora envolvente, Hollow Knight oferece uma experiência imersiva que desafia tanto as habilidades de jogo quanto a curiosidade dos jogadores enquanto desvendam os mistérios deste mundo encantador e perigoso.
+                </p>
+                <p>
+                    Em Hollow Knight, os jogadores enfrentam uma narrativa rica e atmosférica, sem diálogos falados, mas repleta de personagens cativantes e intrigantes. A exploração é uma parte fundamental do jogo, com vastas áreas interconectadas que revelam segredos e desafios à medida que o jogador avança. Além disso, a progressão do personagem é profundamente gratificante, com habilidades e upgrades que são conquistados ao longo do caminho, permitindo acesso a novas áreas e enfrentando inimigos cada vez mais formidáveis. Com uma mistura habilidosa de desafios de plataforma, combate tático e uma atmosfera envolvente, Hollow Knight oferece uma experiência de jogo que é tanto desafiadora quanto imersiva, garantindo que os jogadores se percam em seu mundo meticulosamente criado por horas a fio.
+                </p>
 
-header,
-section h2,
-section h3 {
-    font-family: 'Bungee', sans-serif;
-}
-
-header {
-    padding: 16px;
-    background-color: white;
-    color: black;
-}
-
-header nav li {
-    display: inline;
-    margin-left: 16px;
-    font-size: 18px;
-}
-
-header nav li a {
-    color: black;
-    text-decoration: none;
-}
-
-.container {
-    max-width: 1280px;
-    width: 100%;
-    margin: 0 auto;
-}
-
-.brands-list img {
-    height: 40px;
-}
-
-.brands-list li {
-    display: inline;
-    margin-right: 8px;
-}
-
-section {
-    padding: 24px 0;
-    color: white;
-}
-
-section p {
-    margin-bottom: 8px;
-}
-
-.store-front {
-    margin-right: 32px;
-    width: 400px;
-    height: 400px;
-}
-
-#contact .container {
-    display: block;
-}
-
-.contact-methods {
-    display: flex;
-    justify-content: space-between;
-}
-
-.contact-methods > div {
-    flex-basis: 30%; /* Definir uma largura fixa para os elementos */
-}
-
-form input,
-form textarea,
-form button {
-    display: block; /* Mudar para block */
-    width: 320px;
-    margin-bottom: 8px;
-    padding: 8px;
-}
-
-form textarea {
-    resize: none;
-    height: 80px;
-}
-
-form button {
-    background-color: #202020;
-    color: #ecf0f1;
-    border: none;
-    cursor: pointer;
-}
-
-form button:hover {
-    background-color: #60638e;
-}
-
-input:focus,
-textarea:focus {
-    outline-color: #182c61;
-}
-
-.social-links img {
-    height: 48px;
-    width: auto;
-}
-
-.social-links li {
-    display: inline;
-    margin-right: 8px;
-}
-
-.social-links li a {
-    text-decoration: none;
-}
-
-.paragrafo {
-    max-width: 900px; /* Defina o valor desejado */
-    margin: 0 auto; /* Centralizar o conteúdo */
-}
-
-.gameplay video {
-    width: 300px;
-    height: auto;
-    border-radius: 15px;
-    overflow: hidden;
-}
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <h2>Tools</h2>
+            <div class="contact-methods">
+                <div>
+                    <h3>Fale conosco</h3>
+                    <form>
+                        <input type="text" placeholder="Seu nome" required />
+                        <input type="email" placeholder="Seu e-mail" required />
+                        <input type="tel" placeholder="Seu telefone (opcional)" />
+                        <textarea placeholder="Sua mensagem" required></textarea>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+                <div>
+                    <h3>Links Úteis</h3>
+                    <ul class="social-links">
+                        <li>
+                            <a href="https://hollowknight.wiki.fextralife.com/Hollow+Knight+Wiki" title="Wiki">
+                                <img src="./midia/cebeça.png" alt="cebeça" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://scripterswar.com/hollowknight/map" title="Mapa">
+                                <img src="./midia/Quirrel.jpg" alt="Quirrel" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=wN0TZpuIwr4" title="Speedrun">
+                                <img src="./midia/sombra.jpg" alt="sombra" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="gameplay">
+                    <h3>Conheça o jogo</h3>
+                    <p>
+                        <a href="https://www.youtube.com/watch?v=KfGnGYztQz0&t=1s" title="pompano">
+                            <img src="/projeto1/midia/pompano.jpg" alt="Pompano">
+                        </a>
+                        
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>
+                &copy; Games Shop - Todos os direitos reservados - 2022
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
