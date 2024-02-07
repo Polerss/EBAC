@@ -118,7 +118,15 @@ textarea:focus {
 
 .social-links li a {
     text-decoration: none;
+    display: inline;
 }
+
+.social-links li img {
+    text-decoration: none;
+    display: block;
+}
+
+
 
 .paragrafo {
     max-width: 900px; /* Defina o valor desejado */
@@ -131,4 +139,5 @@ textarea:focus {
     height: auto;
     border-radius: 15px;
     overflow: hidden;
+    margin: 0 8px;
 }
