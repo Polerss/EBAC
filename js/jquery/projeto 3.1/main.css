@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+
+.container{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+header, footer {
+    background-color: #192a56;
+    padding-top: 16px;
+    color: white;
+}
+
+header > .container
+footer > .container {
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 16px;
+}
+
+nav {
+    padding: 16px 0;
+    background-color: #575fcf;
+    display: none;
+}
+
+nav li {
+    list-style: none;
+    display: inline;
+    margin-right: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-style: 18px;
+}
+
+nav li a {
+    color: white;
+    text-decoration: none;
+}
+
+.menuHamburguer {
+    width: 32px;
+    cursor: pointer;
+}
+
+.menuHamburguer span {
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.containerFlex {
+    display: flex;
+}
+
+#sobre-a-loja img {
+    margin-right: 24px;
+    max-width: 400px;
+}
+
+section{
+    padding: 48px;
+}
+
+section h2 {
+    margin-bottom: 16px;
+}
+
+.listaVeiculos {
+    flex-wrap: wrap;
+    
+
+}
+
+
+.listaVeiculos li{
+    list-style: none;
+    max-width: 30%;
+
+}
+
+.listaVeiculos li img {
+    max-width: 100%;
+    list-style: none;
+    margin-bottom: 24px;
+}
+
+.listaVeiculos li h3{
+    margin: 16px 0;
+}
+
+.itemCentral {
+    margin: 0 5%;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border: none;
+    background-color: green;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 16px;
+}
+
+.price {
+    margin: 16px;
+    display: block;
+}
+
+
+
+.price del {
+    color: #ccc;
+    font-size: 14px;
+}
+
+.form-campo {
+    margin-bottom: 16px;
+}
+
+.form-campo label {
+    font-weight: bold;
+    display: block;
+}
+
+.form-campo input,
+.form-campo textarea
+{
+width: 100%;
+display: block;
+padding: 8px;
+}
+
+.form-campo textarea {
+    resize: none;
+    height: 120px;
+
+}
+
+form {
+    max-width: 360px;
+}
+
+form button {
+    max-width: 120px;
+}
+
+footer li {
+    list-style: none;
+}
+
+footer li img {
+    height: 32px;
+
+}
+
+.icons-container {
+    margin-left: auto; /* Isso alinhará a div com os ícones à direita */
+}
+
+.icons-container ul {
+    display: flex;
+    align-items: center; /* Isso alinha os ícones verticalmente no centro */
+}
+
+.icons-container ul li {
+    margin-left: 16px; /* Adicione algum espaço entre os ícones */
+}
