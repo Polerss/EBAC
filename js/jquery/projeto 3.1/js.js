@@ -43,11 +43,14 @@ $(document).ready(function() {
         }
     });
 
-    $('listaVeiculos button').click(function(){
-      const destino = $('#contato')
-      
-      $('html').animate(
-          {'scrollTop':destino.offset().top},
-    })
-    
+    // Adicionando logs para depurar a captura do nome do veículo
+    $('.listaVeiculos button').click(function(){
+        const destino = $('#contato'); 
+        const nomeVeiculo = $(this).parent().find('h3').text();
+        console.log("Nome do veículo:", nomeVeiculo);
+        $('#veiculo-interesse').val(nomeVeiculo);
+        $('html').animate(
+            {'scrollTop':destino.offset().top},1000
+        );
+    });
 });
